@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import tracker from "../../Assets/Projects/tracker.png";
 import translator from "../../Assets/Projects/translator.png";
 import traviya from "../../Assets/Projects/traviya.png";
+import movify from "../../Assets/Projects/movify.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -47,6 +48,16 @@ function Projects() {
               description="A full-stack travel booking platform where users can search trips by destination, month, and type with dynamic filtering. Built using React, Node.js, Express, and MongoDB with secure JWT authentication, and real-time results."
               ghLink="https://github.com/ashish-56/traviya-travel-site"
               demoLink="https://traviya-travel-site.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={movify}
+              isBlog={false}
+              title="Movify Explorer"
+              description="A responsive movie search and watchlist application powered by JavaScript and the OMDb API. Features include live search, multi-page results, status tags, filters, sorting, and automatic featured movie recommendations."
+              ghLink="https://github.com/ashish-56/Movify-Explorer"
+              demoLink="https://movify-explorer.vercel.app/"
             />
           </Col>
         </Row>
